@@ -6,6 +6,8 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 
+#include "GpsPosition.h"
+
 using namespace SampleApp_WindowsPhone;
 
 using namespace Platform;
@@ -47,4 +49,11 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 void MainPage::button1_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 	txtTime->Text = "Hello C++!";
+
+	auto position = GetGpsPosition();
+	if ( position != nullptr )
+	{
+		position->GetCurrentPosition();
+		txtTime->Text += "\n" + position->GetLatitude().ToString() + ", " + position->GetLongitude().ToString();
+	}
 }

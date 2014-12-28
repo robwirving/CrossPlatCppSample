@@ -42,6 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+# Visual Studio files and folders
+*.opensdf
+*.sdf
 x86/
 Debug/
 ipch/
