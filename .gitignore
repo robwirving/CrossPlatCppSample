@@ -41,3 +41,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+x86/
+Debug/
+ipch/
+SampleApp.WindowsPhone/Debug
+SampleApp.WindowsPhone/Generated Files
