@@ -7,6 +7,8 @@
 
 #include "MainPage.g.h"
 
+#include "Quizzer.h"
+
 namespace SampleApp_WindowsPhone
 {
 	/// <summary>
@@ -21,5 +23,14 @@ namespace SampleApp_WindowsPhone
 		virtual void OnNavigatedTo(Windows::UI::Xaml::Navigation::NavigationEventArgs^ e) override;
 	private:
 		void button1_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void button2_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void button3_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+
+		void selectAnswer(unsigned int answerChoice);
+
+		void displayQuestion();
+		
+		Quizzer _quizzer;
+	void Page_Loaded(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

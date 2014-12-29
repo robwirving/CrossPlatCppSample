@@ -4,6 +4,11 @@
 using namespace concurrency;
 using namespace Windows::Devices::Geolocation;
 
+GpsPosition* GetGpsPosition()
+{
+	return new GpsPosition_Windows();
+}
+
 GpsPosition_Windows::GpsPosition_Windows()
 {
 }
@@ -26,9 +31,4 @@ void GpsPosition_Windows::GetCurrentPosition()
 		synchronizer.set();
 	}, task_continuation_context::use_arbitrary());
 	synchronizer.wait();
-}
-
-GpsPosition* GetGpsPosition()
-{
-	return new GpsPosition_Windows();
 }

@@ -48,6 +48,9 @@ Temporary Items
 *.sdf
 x86/
 Debug/
+Release/
 ipch/
+MiniPals/MiniPals.Windows/Debug
+MiniPals/MiniPals.Windows/Release
 SampleApp.WindowsPhone/Debug
 SampleApp.WindowsPhone/Generated Files

@@ -14,9 +14,13 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CalculateDistance.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)QuizQuestion.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SharedCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CalculateDistance.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)QuizQuestion.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)SharedCode.h" />
   </ItemGroup>
 </Project>

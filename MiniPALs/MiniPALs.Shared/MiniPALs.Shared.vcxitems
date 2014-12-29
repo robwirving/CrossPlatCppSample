@@ -15,10 +15,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GpsPosition.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MiniPALs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TTSPlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)GpsPosition.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MiniPALs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TTSPlayer.h" />
   </ItemGroup>
 </Project>

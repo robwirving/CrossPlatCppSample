@@ -43,4 +43,7 @@
   <ItemGroup>
     <Page Include="MainPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\clapping.mp3" />
+  </ItemGroup>
 </Project>

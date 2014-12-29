@@ -130,19 +130,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="GpsPosition_Windows.h" />
-    <ClInclude Include="MiniPALs_Windows.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PlatformConversions_Windows.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TTSPlayer_Windows.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GpsPosition_Windows.cpp" />
-    <ClCompile Include="MiniPALs_Windows.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PlatformConversions_Windows.cpp" />
+    <ClCompile Include="TTSPlayer_Windows.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

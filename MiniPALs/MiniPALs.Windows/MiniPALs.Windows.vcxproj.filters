@@ -8,13 +8,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="MiniPALs_Windows.cpp" />
     <ClCompile Include="GpsPosition_Windows.cpp" />
+    <ClCompile Include="TTSPlayer_Windows.cpp" />
+    <ClCompile Include="PlatformConversions_Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="MiniPALs_Windows.h" />
     <ClInclude Include="GpsPosition_Windows.h" />
+    <ClInclude Include="TTSPlayer_Windows.h" />
+    <ClInclude Include="PlatformConversions_Windows.h" />
   </ItemGroup>
 </Project>

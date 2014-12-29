@@ -6,8 +6,19 @@ GpsPosition::GpsPosition()
 {
 }
 
+GpsPosition::GpsPosition(const GpsPosition& rhs)
+{
+	_latitude = rhs.GetLatitude();
+	_longitude = rhs.GetLongitude();
+}
+
 GpsPosition::~GpsPosition()
 {
+}
+
+void GpsPosition::GetCurrentPosition()
+{
+
 }
 
 double GpsPosition::GetLatitude() const

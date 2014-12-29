@@ -7,12 +7,15 @@
 #include "MainPage.xaml.h"
 
 #include "GpsPosition.h"
+#include "SharedCode.h"
+#include "PlatformConversions_Windows.h"
 
 using namespace SampleApp_WindowsPhone;
 
 using namespace Platform;
 using namespace Windows::Foundation;
 using namespace Windows::Foundation::Collections;
+using namespace Windows::UI::Core;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::UI::Xaml::Controls::Primitives;
@@ -48,12 +51,55 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 
 void MainPage::button1_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	txtTime->Text = "Hello C++!";
+	selectAnswer(0);
+}
 
-	auto position = GetGpsPosition();
-	if ( position != nullptr )
+void MainPage::button2_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	selectAnswer(1);
+}
+
+void MainPage::button3_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	selectAnswer(2);
+}
+
+void MainPage::selectAnswer(unsigned int answerChoice)
+{
+	bool correct = _quizzer.SelectAnswer(answerChoice);
+	if ( correct )
 	{
-		position->GetCurrentPosition();
-		txtTime->Text += "\n" + position->GetLatitude().ToString() + ", " + position->GetLongitude().ToString();
+		if(_quizzer.NextQuestion())
+			displayQuestion();
 	}
+}
+
+void MainPage::Page_Loaded(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	progressRing->IsActive = true;
+
+	auto coreWindow = CoreWindow::GetForCurrentThread();
+
+	concurrency::create_task([=]()
+	{
+		_quizzer.Load();
+
+		coreWindow->Dispatcher->RunAsync(CoreDispatcherPriority::Normal,
+			ref new DispatchedHandler([=]()
+		{
+			progressRing->IsActive = false;
+
+			displayQuestion();
+		}));
+	});
+}
+
+void MainPage::displayQuestion()
+{
+	auto question = _quizzer.GetQuestion();
+
+	txtQuestion->Text = convertToPlatformString(question.GetQuestion());
+	button1->Content = convertToPlatformString(question.GetAnswers()[0]);
+	button2->Content = convertToPlatformString(question.GetAnswers()[1]);
+	button3->Content = convertToPlatformString(question.GetAnswers()[2]);
 }
