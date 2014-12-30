@@ -11,6 +11,7 @@
     <ClCompile Include="GpsPosition_Windows.cpp" />
     <ClCompile Include="TTSPlayer_Windows.cpp" />
     <ClCompile Include="PlatformConversions_Windows.cpp" />
+    <ClCompile Include="SoundEffectPlayer_Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -18,5 +19,6 @@
     <ClInclude Include="GpsPosition_Windows.h" />
     <ClInclude Include="TTSPlayer_Windows.h" />
     <ClInclude Include="PlatformConversions_Windows.h" />
+    <ClInclude Include="SoundEffectPlayer_Windows.h" />
   </ItemGroup>
 </Project>

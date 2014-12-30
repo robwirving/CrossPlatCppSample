@@ -6,6 +6,7 @@ using namespace std;
 
 Quizzer::Quizzer()
 	: _gpsPosition(GetGpsPosition())
+	, _ttsPlayer(GetTTSPlayer())
 	, _questionIndex(0)
 {
 	_cities.emplace_back(CityLocation("Redmond, WA", 47.669444, -122.123889, 0.0));
@@ -75,6 +76,9 @@ bool Quizzer::NextQuestion()
 const QuizQuestion& Quizzer::GetQuestion() const
 {
 	auto question = _questions[_questionIndex];
+
+	_ttsPlayer->SpeakText(question.GetQuestion());
+
 	return _questions[_questionIndex];
 }
 

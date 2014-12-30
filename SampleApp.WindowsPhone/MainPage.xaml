@@ -13,6 +13,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
+        <MediaElement
+            x:Name="media"/>
+        
         <TextBlock 
             x:Name="txtQuestion"
             HorizontalAlignment="Center" 

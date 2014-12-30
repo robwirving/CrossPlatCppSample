@@ -6,6 +6,7 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 
+#include "PlatformCallback.h"
 #include "GpsPosition.h"
 #include "SharedCode.h"
 #include "PlatformConversions_Windows.h"
@@ -29,6 +30,8 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+
+	GetPlatformCallback()->SetMediaElement(media);
 }
 
 /// <summary>
@@ -47,6 +50,26 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 	// Windows::Phone::UI::Input::HardwareButtons.BackPressed event.
 	// If you are using the NavigationHelper provided by some templates,
 	// this event is handled for you.
+}
+
+void MainPage::Page_Loaded(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	progressRing->IsActive = true;
+
+	auto coreWindow = Platform::Agile<CoreWindow>(CoreWindow::GetForCurrentThread());
+
+	concurrency::create_task([=]()
+	{
+		_quizzer.Load();
+
+		coreWindow->Dispatcher->RunAsync(CoreDispatcherPriority::Normal,
+			ref new DispatchedHandler([=]()
+		{
+			progressRing->IsActive = false;
+
+			displayQuestion();
+		}));
+	});
 }
 
 void MainPage::button1_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
@@ -72,26 +95,6 @@ void MainPage::selectAnswer(unsigned int answerChoice)
 		if(_quizzer.NextQuestion())
 			displayQuestion();
 	}
-}
-
-void MainPage::Page_Loaded(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	progressRing->IsActive = true;
-
-	auto coreWindow = CoreWindow::GetForCurrentThread();
-
-	concurrency::create_task([=]()
-	{
-		_quizzer.Load();
-
-		coreWindow->Dispatcher->RunAsync(CoreDispatcherPriority::Normal,
-			ref new DispatchedHandler([=]()
-		{
-			progressRing->IsActive = false;
-
-			displayQuestion();
-		}));
-	});
 }
 
 void MainPage::displayQuestion()

@@ -7,7 +7,7 @@
 #include "CityLocation.h"
 #include "QuizQuestion.h"
 #include "GpsPosition.h"
-//#include "TTSPlayer.h"
+#include "TTSPlayer.h"
 
 class Quizzer
 {
@@ -34,5 +34,5 @@ private:
 	unsigned int _questionIndex;
 
 	std::shared_ptr<GpsPosition> _gpsPosition;
-	//std::shared_ptr<TTSPlayer> _ttsPlayer;
+	std::shared_ptr<TTSPlayer> _ttsPlayer;
 };

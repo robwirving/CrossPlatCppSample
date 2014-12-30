@@ -15,10 +15,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GpsPosition.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SoundEffectPlayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TTSPlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)GpsPosition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SoundEffectPlayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TTSPlayer.h" />
   </ItemGroup>
 </Project>
