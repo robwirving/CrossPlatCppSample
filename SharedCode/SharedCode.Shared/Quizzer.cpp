@@ -1,5 +1,6 @@
 #include "Quizzer.h"
 #include "CalculateDistance.h"
+#include "SoundEffectPlayer.h"
 #include <algorithm>
 
 using namespace std;
@@ -7,6 +8,7 @@ using namespace std;
 Quizzer::Quizzer()
 	: _gpsPosition(GetGpsPosition())
 	, _ttsPlayer(GetTTSPlayer())
+	, _soundPlayer(GetSoundEffectPlayer())
 	, _questionIndex(0)
 {
 	_cities.emplace_back(CityLocation("Redmond, WA", 47.669444, -122.123889, 0.0));
@@ -87,11 +89,13 @@ bool Quizzer::SelectAnswer(unsigned int answerChoice) const
 	if( _questions[_questionIndex].IsCorrectAnswer(answerChoice) )
 	{
 		// play a clapping sound
+		_soundPlayer->PlayEffect("clapping.mp3");
 		return true;
 	}
 	else
 	{
 		// play a buzzer sound
+		_soundPlayer->PlayEffect("buzzer.mp3");
 		return false;
 	}
 }

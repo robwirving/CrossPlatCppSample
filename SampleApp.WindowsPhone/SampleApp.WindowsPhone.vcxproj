@@ -118,6 +118,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Media Include="Assets\buzzer.mp3" />
+    <Media Include="Assets\clapping.mp3" />
     <Image Include="Assets\Logo.scale-240.png" />
     <Image Include="Assets\SmallLogo.scale-240.png" />
     <Image Include="Assets\SplashScreen.scale-240.png" />
@@ -144,9 +146,6 @@
     <ProjectReference Include="..\SharedCode\SharedCode.Windows\SharedCode.Windows.vcxproj">
       <Project>{f225e618-6196-4204-9fd6-7560027223c0}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\clapping.mp3" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

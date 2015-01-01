@@ -87,14 +87,17 @@ void MainPage::button3_Click(Platform::Object^ sender, Windows::UI::Xaml::Routed
 	selectAnswer(2);
 }
 
+void MainPage::button4_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	if(_quizzer.NextQuestion())
+		displayQuestion();
+}
+
 void MainPage::selectAnswer(unsigned int answerChoice)
 {
-	bool correct = _quizzer.SelectAnswer(answerChoice);
-	if ( correct )
-	{
-		if(_quizzer.NextQuestion())
-			displayQuestion();
-	}
+	_quizzer.SelectAnswer(answerChoice);
+
+	button4->Visibility = Windows::UI::Xaml::Visibility::Visible;
 }
 
 void MainPage::displayQuestion()
@@ -105,4 +108,6 @@ void MainPage::displayQuestion()
 	button1->Content = convertToPlatformString(question.GetAnswers()[0]);
 	button2->Content = convertToPlatformString(question.GetAnswers()[1]);
 	button3->Content = convertToPlatformString(question.GetAnswers()[2]);
+
+	button4->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 }

@@ -42,6 +42,13 @@
                 Click="button3_Click"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"/>
+            <Button
+                x:Name="button4"
+                Content="Next Question >"
+                Click="button4_Click"
+                Visibility="Collapsed"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"/>
         </StackPanel>
         
         <ProgressRing 

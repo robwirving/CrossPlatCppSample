@@ -8,6 +8,7 @@
 #include "QuizQuestion.h"
 #include "GpsPosition.h"
 #include "TTSPlayer.h"
+#include "SoundEffectPlayer.h"
 
 class Quizzer
 {
@@ -35,4 +36,5 @@ private:
 
 	std::shared_ptr<GpsPosition> _gpsPosition;
 	std::shared_ptr<TTSPlayer> _ttsPlayer;
+	std::shared_ptr<SoundEffectPlayer> _soundPlayer;
 };
