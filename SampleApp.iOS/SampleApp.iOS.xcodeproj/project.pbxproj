@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5174A381A58D7F800D307B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5174A371A58D7F800D307B2 /* main.m */; };
+		B5174A3B1A58D7F800D307B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5174A3A1A58D7F800D307B2 /* AppDelegate.m */; };
+		B5174A3E1A58D7F800D307B2 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174A3D1A58D7F800D307B2 /* ViewController.mm */; };
+		B5174A411A58D7F800D307B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5174A3F1A58D7F800D307B2 /* Main.storyboard */; };
+		B5174A431A58D7F800D307B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5174A421A58D7F800D307B2 /* Images.xcassets */; };
+		B5174A461A58D7F800D307B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5174A441A58D7F800D307B2 /* LaunchScreen.xib */; };
+		B5174A811A58DDAC00D307B2 /* CalculateDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */; };
+		B5174A821A58DDAC00D307B2 /* CityLocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A791A58DDAC00D307B2 /* CityLocation.cpp */; };
+		B5174A831A58DDAC00D307B2 /* QuizQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */; };
+		B5174A841A58DDAC00D307B2 /* Quizzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */; };
+		B5174A851A58DDAC00D307B2 /* SharedCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */; };
+		B5174AA71A58DE0B00D307B2 /* GpsPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA11A58DE0B00D307B2 /* GpsPosition.cpp */; };
+		B5174AA81A58DE0B00D307B2 /* SoundEffectPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA31A58DE0B00D307B2 /* SoundEffectPlayer.cpp */; };
+		B5174AA91A58DE0B00D307B2 /* TTSPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA51A58DE0B00D307B2 /* TTSPlayer.cpp */; };
+		B5174AAA1A58DE9700D307B2 /* libMiniPals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174A8A1A58DDC500D307B2 /* libMiniPals.a */; };
+		B5174AAB1A58DE9700D307B2 /* libSharedCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174A601A58DD6300D307B2 /* libSharedCode.a */; };
+		B5174AAF1A58EDDE00D307B2 /* GpsPosition_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174AAE1A58EDDE00D307B2 /* GpsPosition_iOS.mm */; };
+		B5174AB41A58EF5E00D307B2 /* SoundEffectPlayer_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174AB21A58EF5E00D307B2 /* SoundEffectPlayer_iOS.mm */; };
+		B5174AB51A58EF5E00D307B2 /* TTSPlayer_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174AB31A58EF5E00D307B2 /* TTSPlayer_iOS.mm */; };
+		B5174ABA1A58F52300D307B2 /* PlatformConversions_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174AB91A58F52300D307B2 /* PlatformConversions_iOS.mm */; };
+		B5174ABC1A59016500D307B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174ABB1A59016500D307B2 /* CoreLocation.framework */; };
+		B5174ABE1A59892900D307B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174ABD1A59892900D307B2 /* AVFoundation.framework */; };
+		B5174AC11A59D62A00D307B2 /* buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */; };
+		B5174AC21A59D62A00D307B2 /* clapping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174AC01A59D62A00D307B2 /* clapping.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5174A5E1A58DD6300D307B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5174A881A58DDC500D307B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B5174A321A58D7F800D307B2 /* SampleApp.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5174A361A58D7F800D307B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5174A371A58D7F800D307B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5174A391A58D7F800D307B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5174A3A1A58D7F800D307B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5174A3C1A58D7F800D307B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5174A3D1A58D7F800D307B2 /* ViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B5174A401A58D7F800D307B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5174A421A58D7F800D307B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5174A451A58D7F800D307B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B5174A601A58DD6300D307B2 /* libSharedCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSharedCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CalculateDistance.cpp; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.cpp; sourceTree = "<group>"; };
+		B5174A781A58DDAC00D307B2 /* CalculateDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateDistance.h; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.h; sourceTree = "<group>"; };
+		B5174A791A58DDAC00D307B2 /* CityLocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CityLocation.cpp; path = ../../SharedCode/SharedCode.Shared/CityLocation.cpp; sourceTree = "<group>"; };
+		B5174A7A1A58DDAC00D307B2 /* CityLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityLocation.h; path = ../../SharedCode/SharedCode.Shared/CityLocation.h; sourceTree = "<group>"; };
+		B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuizQuestion.cpp; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.cpp; sourceTree = "<group>"; };
+		B5174A7C1A58DDAC00D307B2 /* QuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizQuestion.h; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.h; sourceTree = "<group>"; };
+		B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Quizzer.cpp; path = ../../SharedCode/SharedCode.Shared/Quizzer.cpp; sourceTree = "<group>"; };
+		B5174A7E1A58DDAC00D307B2 /* Quizzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quizzer.h; path = ../../SharedCode/SharedCode.Shared/Quizzer.h; sourceTree = "<group>"; };
+		B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SharedCode.cpp; path = ../../SharedCode/SharedCode.Shared/SharedCode.cpp; sourceTree = "<group>"; };
+		B5174A801A58DDAC00D307B2 /* SharedCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedCode.h; path = ../../SharedCode/SharedCode.Shared/SharedCode.h; sourceTree = "<group>"; };
+		B5174A8A1A58DDC500D307B2 /* libMiniPals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMiniPals.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5174AA11A58DE0B00D307B2 /* GpsPosition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GpsPosition.cpp; path = ../../MiniPALs/MiniPALs.Shared/GpsPosition.cpp; sourceTree = "<group>"; };
+		B5174AA21A58DE0B00D307B2 /* GpsPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GpsPosition.h; path = ../../MiniPALs/MiniPALs.Shared/GpsPosition.h; sourceTree = "<group>"; };
+		B5174AA31A58DE0B00D307B2 /* SoundEffectPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoundEffectPlayer.cpp; path = ../../MiniPALs/MiniPALs.Shared/SoundEffectPlayer.cpp; sourceTree = "<group>"; };
+		B5174AA41A58DE0B00D307B2 /* SoundEffectPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEffectPlayer.h; path = ../../MiniPALs/MiniPALs.Shared/SoundEffectPlayer.h; sourceTree = "<group>"; };
+		B5174AA51A58DE0B00D307B2 /* TTSPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TTSPlayer.cpp; path = ../../MiniPALs/MiniPALs.Shared/TTSPlayer.cpp; sourceTree = "<group>"; };
+		B5174AA61A58DE0B00D307B2 /* TTSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSPlayer.h; path = ../../MiniPALs/MiniPALs.Shared/TTSPlayer.h; sourceTree = "<group>"; };
+		B5174AAE1A58EDDE00D307B2 /* GpsPosition_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GpsPosition_iOS.mm; path = ../../MiniPALs/MiniPALs.iOS/GpsPosition_iOS.mm; sourceTree = "<group>"; };
+		B5174AB11A58EE9B00D307B2 /* GpsPosition_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GpsPosition_iOS.h; path = ../../MiniPALs/MiniPALs.iOS/GpsPosition_iOS.h; sourceTree = "<group>"; };
+		B5174AB21A58EF5E00D307B2 /* SoundEffectPlayer_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SoundEffectPlayer_iOS.mm; path = ../../MiniPALs/MiniPALs.iOS/SoundEffectPlayer_iOS.mm; sourceTree = "<group>"; };
+		B5174AB31A58EF5E00D307B2 /* TTSPlayer_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TTSPlayer_iOS.mm; path = ../../MiniPALs/MiniPALs.iOS/TTSPlayer_iOS.mm; sourceTree = "<group>"; };
+		B5174AB61A58EF7000D307B2 /* SoundEffectPlayer_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoundEffectPlayer_iOS.h; path = ../../MiniPALs/MiniPALs.iOS/SoundEffectPlayer_iOS.h; sourceTree = "<group>"; };
+		B5174AB71A58EF7000D307B2 /* TTSPlayer_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TTSPlayer_iOS.h; path = ../../MiniPALs/MiniPALs.iOS/TTSPlayer_iOS.h; sourceTree = "<group>"; };
+		B5174AB81A58F51100D307B2 /* PlatformConversions_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlatformConversions_iOS.h; path = ../../MiniPALs/MiniPALs.iOS/PlatformConversions_iOS.h; sourceTree = "<group>"; };
+		B5174AB91A58F52300D307B2 /* PlatformConversions_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PlatformConversions_iOS.mm; path = ../../MiniPALs/MiniPALs.iOS/PlatformConversions_iOS.mm; sourceTree = "<group>"; };
+		B5174ABB1A59016500D307B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B5174ABD1A59892900D307B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzzer.mp3; path = ../SampleApp.WindowsPhone/Assets/buzzer.mp3; sourceTree = "<group>"; };
+		B5174AC01A59D62A00D307B2 /* clapping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clapping.mp3; path = ../SampleApp.WindowsPhone/Assets/clapping.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5174A2F1A58D7F800D307B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5174ABE1A59892900D307B2 /* AVFoundation.framework in Frameworks */,
+				B5174ABC1A59016500D307B2 /* CoreLocation.framework in Frameworks */,
+				B5174AAA1A58DE9700D307B2 /* libMiniPals.a in Frameworks */,
+				B5174AAB1A58DE9700D307B2 /* libSharedCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5174A5D1A58DD6300D307B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5174A871A58DDC500D307B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5174A291A58D7F800D307B2 = {
+			isa = PBXGroup;
+			children = (
+				B5174ABD1A59892900D307B2 /* AVFoundation.framework */,
+				B5174ABB1A59016500D307B2 /* CoreLocation.framework */,
+				B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */,
+				B5174AC01A59D62A00D307B2 /* clapping.mp3 */,
+				B5174A8B1A58DDC500D307B2 /* MiniPals */,
+				B5174A331A58D7F800D307B2 /* Products */,
+				B5174A341A58D7F800D307B2 /* SampleApp.iOS */,
+				B5174A611A58DD6300D307B2 /* SharedCode */,
+			);
+			sourceTree = "<group>";
+		};
+		B5174A331A58D7F800D307B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5174A321A58D7F800D307B2 /* SampleApp.iOS.app */,
+				B5174A601A58DD6300D307B2 /* libSharedCode.a */,
+				B5174A8A1A58DDC500D307B2 /* libMiniPals.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5174A341A58D7F800D307B2 /* SampleApp.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5174A391A58D7F800D307B2 /* AppDelegate.h */,
+				B5174A3A1A58D7F800D307B2 /* AppDelegate.m */,
+				B5174A3C1A58D7F800D307B2 /* ViewController.h */,
+				B5174A3D1A58D7F800D307B2 /* ViewController.mm */,
+				B5174A3F1A58D7F800D307B2 /* Main.storyboard */,
+				B5174A421A58D7F800D307B2 /* Images.xcassets */,
+				B5174A441A58D7F800D307B2 /* LaunchScreen.xib */,
+				B5174A351A58D7F800D307B2 /* Supporting Files */,
+			);
+			path = SampleApp.iOS;
+			sourceTree = "<group>";
+		};
+		B5174A351A58D7F800D307B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5174A361A58D7F800D307B2 /* Info.plist */,
+				B5174A371A58D7F800D307B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5174A611A58DD6300D307B2 /* SharedCode */ = {
+			isa = PBXGroup;
+			children = (
+				B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */,
+				B5174A781A58DDAC00D307B2 /* CalculateDistance.h */,
+				B5174A791A58DDAC00D307B2 /* CityLocation.cpp */,
+				B5174A7A1A58DDAC00D307B2 /* CityLocation.h */,
+				B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */,
+				B5174A7C1A58DDAC00D307B2 /* QuizQuestion.h */,
+				B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */,
+				B5174A7E1A58DDAC00D307B2 /* Quizzer.h */,
+				B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */,
+				B5174A801A58DDAC00D307B2 /* SharedCode.h */,
+			);
+			path = SharedCode;
+			sourceTree = "<group>";
+		};
+		B5174A8B1A58DDC500D307B2 /* MiniPals */ = {
+			isa = PBXGroup;
+			children = (
+				B5174AB11A58EE9B00D307B2 /* GpsPosition_iOS.h */,
+				B5174AAE1A58EDDE00D307B2 /* GpsPosition_iOS.mm */,
+				B5174AA11A58DE0B00D307B2 /* GpsPosition.cpp */,
+				B5174AA21A58DE0B00D307B2 /* GpsPosition.h */,
+				B5174AB81A58F51100D307B2 /* PlatformConversions_iOS.h */,
+				B5174AB91A58F52300D307B2 /* PlatformConversions_iOS.mm */,
+				B5174AB61A58EF7000D307B2 /* SoundEffectPlayer_iOS.h */,
+				B5174AB21A58EF5E00D307B2 /* SoundEffectPlayer_iOS.mm */,
+				B5174AA31A58DE0B00D307B2 /* SoundEffectPlayer.cpp */,
+				B5174AA41A58DE0B00D307B2 /* SoundEffectPlayer.h */,
+				B5174AB71A58EF7000D307B2 /* TTSPlayer_iOS.h */,
+				B5174AB31A58EF5E00D307B2 /* TTSPlayer_iOS.mm */,
+				B5174AA51A58DE0B00D307B2 /* TTSPlayer.cpp */,
+				B5174AA61A58DE0B00D307B2 /* TTSPlayer.h */,
+			);
+			path = MiniPals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5174A311A58D7F800D307B2 /* SampleApp.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5174A551A58D7F800D307B2 /* Build configuration list for PBXNativeTarget "SampleApp.iOS" */;
+			buildPhases = (
+				B5174A2E1A58D7F800D307B2 /* Sources */,
+				B5174A2F1A58D7F800D307B2 /* Frameworks */,
+				B5174A301A58D7F800D307B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleApp.iOS;
+			productName = SampleApp.iOS;
+			productReference = B5174A321A58D7F800D307B2 /* SampleApp.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5174A5F1A58DD6300D307B2 /* SharedCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5174A711A58DD6300D307B2 /* Build configuration list for PBXNativeTarget "SharedCode" */;
+			buildPhases = (
+				B5174A5C1A58DD6300D307B2 /* Sources */,
+				B5174A5D1A58DD6300D307B2 /* Frameworks */,
+				B5174A5E1A58DD6300D307B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedCode;
+			productName = SharedCode;
+			productReference = B5174A601A58DD6300D307B2 /* libSharedCode.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5174A891A58DDC500D307B2 /* MiniPals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5174A9B1A58DDC600D307B2 /* Build configuration list for PBXNativeTarget "MiniPals" */;
+			buildPhases = (
+				B5174A861A58DDC500D307B2 /* Sources */,
+				B5174A871A58DDC500D307B2 /* Frameworks */,
+				B5174A881A58DDC500D307B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniPals;
+			productName = MiniPals;
+			productReference = B5174A8A1A58DDC500D307B2 /* libMiniPals.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5174A2A1A58D7F800D307B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rob Irving";
+				TargetAttributes = {
+					B5174A311A58D7F800D307B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B5174A5F1A58DD6300D307B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B5174A891A58DDC500D307B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B5174A2D1A58D7F800D307B2 /* Build configuration list for PBXProject "SampleApp.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5174A291A58D7F800D307B2;
+			productRefGroup = B5174A331A58D7F800D307B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5174A311A58D7F800D307B2 /* SampleApp.iOS */,
+				B5174A5F1A58DD6300D307B2 /* SharedCode */,
+				B5174A891A58DDC500D307B2 /* MiniPals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5174A301A58D7F800D307B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5174A411A58D7F800D307B2 /* Main.storyboard in Resources */,
+				B5174A461A58D7F800D307B2 /* LaunchScreen.xib in Resources */,
+				B5174AC21A59D62A00D307B2 /* clapping.mp3 in Resources */,
+				B5174AC11A59D62A00D307B2 /* buzzer.mp3 in Resources */,
+				B5174A431A58D7F800D307B2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5174A2E1A58D7F800D307B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5174A3E1A58D7F800D307B2 /* ViewController.mm in Sources */,
+				B5174A3B1A58D7F800D307B2 /* AppDelegate.m in Sources */,
+				B5174A381A58D7F800D307B2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5174A5C1A58DD6300D307B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5174A851A58DDAC00D307B2 /* SharedCode.cpp in Sources */,
+				B5174A811A58DDAC00D307B2 /* CalculateDistance.cpp in Sources */,
+				B5174A841A58DDAC00D307B2 /* Quizzer.cpp in Sources */,
+				B5174A831A58DDAC00D307B2 /* QuizQuestion.cpp in Sources */,
+				B5174A821A58DDAC00D307B2 /* CityLocation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5174A861A58DDC500D307B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5174AB51A58EF5E00D307B2 /* TTSPlayer_iOS.mm in Sources */,
+				B5174ABA1A58F52300D307B2 /* PlatformConversions_iOS.mm in Sources */,
+				B5174AA81A58DE0B00D307B2 /* SoundEffectPlayer.cpp in Sources */,
+				B5174AA91A58DE0B00D307B2 /* TTSPlayer.cpp in Sources */,
+				B5174AA71A58DE0B00D307B2 /* GpsPosition.cpp in Sources */,
+				B5174AAF1A58EDDE00D307B2 /* GpsPosition_iOS.mm in Sources */,
+				B5174AB41A58EF5E00D307B2 /* SoundEffectPlayer_iOS.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5174A3F1A58D7F800D307B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5174A401A58D7F800D307B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5174A441A58D7F800D307B2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5174A451A58D7F800D307B2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5174A531A58D7F800D307B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5174A541A58D7F800D307B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5174A561A58D7F800D307B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleApp.iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5174A571A58D7F800D307B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleApp.iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B5174A721A58DD6300D307B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B5174A731A58DD6300D307B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B5174A9C1A58DDC600D307B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B5174A9D1A58DDC600D307B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5174A2D1A58D7F800D307B2 /* Build configuration list for PBXProject "SampleApp.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5174A531A58D7F800D307B2 /* Debug */,
+				B5174A541A58D7F800D307B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5174A551A58D7F800D307B2 /* Build configuration list for PBXNativeTarget "SampleApp.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5174A561A58D7F800D307B2 /* Debug */,
+				B5174A571A58D7F800D307B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5174A711A58DD6300D307B2 /* Build configuration list for PBXNativeTarget "SharedCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5174A721A58DD6300D307B2 /* Debug */,
+				B5174A731A58DD6300D307B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5174A9B1A58DDC600D307B2 /* Build configuration list for PBXNativeTarget "MiniPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5174A9C1A58DDC600D307B2 /* Debug */,
+				B5174A9D1A58DDC600D307B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5174A2A1A58D7F800D307B2 /* Project object */;
+}

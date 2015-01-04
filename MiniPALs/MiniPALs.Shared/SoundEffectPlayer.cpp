@@ -1,5 +1,4 @@
 #include "SoundEffectPlayer.h"
-#include "..\MiniPALs.Windows\SoundEffectPlayer_Windows.h"
 
 SoundEffectPlayer::SoundEffectPlayer()
 {
