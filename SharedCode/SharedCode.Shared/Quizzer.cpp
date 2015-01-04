@@ -46,21 +46,30 @@ void Quizzer::LoadQuestions()
 {
 	if ( _nearestCity.name == "Redmond, WA" )
 	{
-		_questions.emplace_back(QuizQuestion("Redmond Question 1", { "Answer 1", "Answer 2", "Answer 3"}, 0));
-		_questions.emplace_back(QuizQuestion("Redmond Question 2", { "Answer 1", "Answer 2", "Answer 3"}, 1));
-		_questions.emplace_back(QuizQuestion("Redmond Question 3", { "Answer 1", "Answer 2", "Answer 3"}, 2));
+		_questions.emplace_back(QuizQuestion("Which tech company's main HQ is located in Redmond, WA?", 
+			{ "Microsoft", "Amazon", "Google"}, 0));
+		_questions.emplace_back(QuizQuestion("Microsoft employees are said to celebrate their anniversaries with pounds of what candy?", 
+			{ "KitKat bars", "M&Ms", "Twizzlers"}, 1));
+		_questions.emplace_back(QuizQuestion("Bill Gates originally planned to release Windows under what name?", 
+			{ "Longhorn", "Gateways", "Interface Manager"}, 2));
 	}
 	else if ( _nearestCity.name == "Mountain View, CA" )
 	{
-		_questions.emplace_back(QuizQuestion("Mountain View Question 1", { "Answer 1", "Answer 2", "Answer 3"}, 0));
-		_questions.emplace_back(QuizQuestion("Mountain View Question 2", { "Answer 1", "Answer 2", "Answer 3"}, 1));
-		_questions.emplace_back(QuizQuestion("Mountain View Question 3", { "Answer 1", "Answer 2", "Answer 3"}, 2));
+		_questions.emplace_back(QuizQuestion("Which tech company's main HQ is located in Mountain View, CA?", 
+			{ "Google", "Yahoo", "Firefox"}, 0));
+		_questions.emplace_back(QuizQuestion("Google is known for adding what to it's search home page?", 
+			{ "Clippy", "Google Doodles", "Lots of clutter"}, 1));
+		_questions.emplace_back(QuizQuestion("What company did Google buy in July 2006?", 
+			{ "Microsoft", "Android", "Youtube"}, 2));
 	}
 	else if ( _nearestCity.name == "Cupertino, CA" )
 	{
-		_questions.emplace_back(QuizQuestion("Cupertino Question 1", { "Answer 1", "Answer 2", "Answer 3"}, 0));
-		_questions.emplace_back(QuizQuestion("Cupertino Question 2", { "Answer 1", "Answer 2", "Answer 3"}, 1));
-		_questions.emplace_back(QuizQuestion("Cupertino Question 3", { "Answer 1", "Answer 2", "Answer 3"}, 2));
+		_questions.emplace_back(QuizQuestion("Which fruit-named tech company's main HQ is located in Cupertino, CA?", 
+			{ "Apple", "Blackberry", "Raspberry Pi"}, 0));
+		_questions.emplace_back(QuizQuestion("What is Apple's future HQ rumored to look like?", 
+			{ "An Apple", "A UFO", "A Giant iPhone"}, 1));
+		_questions.emplace_back(QuizQuestion("Who designed the Apple 1 & Apple 2 Computers?", 
+			{ "Steve Jobs", "Bill Gates", "Steve Wozniak"}, 2));
 	}
 }
 

@@ -13,11 +13,6 @@
 		B5174A411A58D7F800D307B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5174A3F1A58D7F800D307B2 /* Main.storyboard */; };
 		B5174A431A58D7F800D307B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5174A421A58D7F800D307B2 /* Images.xcassets */; };
 		B5174A461A58D7F800D307B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5174A441A58D7F800D307B2 /* LaunchScreen.xib */; };
-		B5174A811A58DDAC00D307B2 /* CalculateDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */; };
-		B5174A821A58DDAC00D307B2 /* CityLocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A791A58DDAC00D307B2 /* CityLocation.cpp */; };
-		B5174A831A58DDAC00D307B2 /* QuizQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */; };
-		B5174A841A58DDAC00D307B2 /* Quizzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */; };
-		B5174A851A58DDAC00D307B2 /* SharedCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */; };
 		B5174AA71A58DE0B00D307B2 /* GpsPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA11A58DE0B00D307B2 /* GpsPosition.cpp */; };
 		B5174AA81A58DE0B00D307B2 /* SoundEffectPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA31A58DE0B00D307B2 /* SoundEffectPlayer.cpp */; };
 		B5174AA91A58DE0B00D307B2 /* TTSPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5174AA51A58DE0B00D307B2 /* TTSPlayer.cpp */; };
@@ -31,6 +26,11 @@
 		B5174ABE1A59892900D307B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174ABD1A59892900D307B2 /* AVFoundation.framework */; };
 		B5174AC11A59D62A00D307B2 /* buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */; };
 		B5174AC21A59D62A00D307B2 /* clapping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174AC01A59D62A00D307B2 /* clapping.mp3 */; };
+		B52E9D081A59EF3D00478BFE /* CalculateDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9CFE1A59EF3D00478BFE /* CalculateDistance.cpp */; };
+		B52E9D091A59EF3D00478BFE /* CityLocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D001A59EF3D00478BFE /* CityLocation.cpp */; };
+		B52E9D0A1A59EF3D00478BFE /* QuizQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D021A59EF3D00478BFE /* QuizQuestion.cpp */; };
+		B52E9D0B1A59EF3D00478BFE /* Quizzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D041A59EF3D00478BFE /* Quizzer.cpp */; };
+		B52E9D0C1A59EF3D00478BFE /* SharedCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D061A59EF3D00478BFE /* SharedCode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,16 +66,6 @@
 		B5174A421A58D7F800D307B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5174A451A58D7F800D307B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B5174A601A58DD6300D307B2 /* libSharedCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSharedCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CalculateDistance.cpp; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.cpp; sourceTree = "<group>"; };
-		B5174A781A58DDAC00D307B2 /* CalculateDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateDistance.h; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.h; sourceTree = "<group>"; };
-		B5174A791A58DDAC00D307B2 /* CityLocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CityLocation.cpp; path = ../../SharedCode/SharedCode.Shared/CityLocation.cpp; sourceTree = "<group>"; };
-		B5174A7A1A58DDAC00D307B2 /* CityLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityLocation.h; path = ../../SharedCode/SharedCode.Shared/CityLocation.h; sourceTree = "<group>"; };
-		B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuizQuestion.cpp; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.cpp; sourceTree = "<group>"; };
-		B5174A7C1A58DDAC00D307B2 /* QuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizQuestion.h; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.h; sourceTree = "<group>"; };
-		B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Quizzer.cpp; path = ../../SharedCode/SharedCode.Shared/Quizzer.cpp; sourceTree = "<group>"; };
-		B5174A7E1A58DDAC00D307B2 /* Quizzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quizzer.h; path = ../../SharedCode/SharedCode.Shared/Quizzer.h; sourceTree = "<group>"; };
-		B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SharedCode.cpp; path = ../../SharedCode/SharedCode.Shared/SharedCode.cpp; sourceTree = "<group>"; };
-		B5174A801A58DDAC00D307B2 /* SharedCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedCode.h; path = ../../SharedCode/SharedCode.Shared/SharedCode.h; sourceTree = "<group>"; };
 		B5174A8A1A58DDC500D307B2 /* libMiniPals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMiniPals.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5174AA11A58DE0B00D307B2 /* GpsPosition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GpsPosition.cpp; path = ../../MiniPALs/MiniPALs.Shared/GpsPosition.cpp; sourceTree = "<group>"; };
 		B5174AA21A58DE0B00D307B2 /* GpsPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GpsPosition.h; path = ../../MiniPALs/MiniPALs.Shared/GpsPosition.h; sourceTree = "<group>"; };
@@ -95,6 +85,16 @@
 		B5174ABD1A59892900D307B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzzer.mp3; path = ../SampleApp.WindowsPhone/Assets/buzzer.mp3; sourceTree = "<group>"; };
 		B5174AC01A59D62A00D307B2 /* clapping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clapping.mp3; path = ../SampleApp.WindowsPhone/Assets/clapping.mp3; sourceTree = "<group>"; };
+		B52E9CFE1A59EF3D00478BFE /* CalculateDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CalculateDistance.cpp; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.cpp; sourceTree = "<group>"; };
+		B52E9CFF1A59EF3D00478BFE /* CalculateDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateDistance.h; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.h; sourceTree = "<group>"; };
+		B52E9D001A59EF3D00478BFE /* CityLocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CityLocation.cpp; path = ../../SharedCode/SharedCode.Shared/CityLocation.cpp; sourceTree = "<group>"; };
+		B52E9D011A59EF3D00478BFE /* CityLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityLocation.h; path = ../../SharedCode/SharedCode.Shared/CityLocation.h; sourceTree = "<group>"; };
+		B52E9D021A59EF3D00478BFE /* QuizQuestion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuizQuestion.cpp; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.cpp; sourceTree = "<group>"; };
+		B52E9D031A59EF3D00478BFE /* QuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizQuestion.h; path = ../../SharedCode/SharedCode.Shared/QuizQuestion.h; sourceTree = "<group>"; };
+		B52E9D041A59EF3D00478BFE /* Quizzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Quizzer.cpp; path = ../../SharedCode/SharedCode.Shared/Quizzer.cpp; sourceTree = "<group>"; };
+		B52E9D051A59EF3D00478BFE /* Quizzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quizzer.h; path = ../../SharedCode/SharedCode.Shared/Quizzer.h; sourceTree = "<group>"; };
+		B52E9D061A59EF3D00478BFE /* SharedCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SharedCode.cpp; path = ../../SharedCode/SharedCode.Shared/SharedCode.cpp; sourceTree = "<group>"; };
+		B52E9D071A59EF3D00478BFE /* SharedCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedCode.h; path = ../../SharedCode/SharedCode.Shared/SharedCode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,16 +177,16 @@
 		B5174A611A58DD6300D307B2 /* SharedCode */ = {
 			isa = PBXGroup;
 			children = (
-				B5174A771A58DDAC00D307B2 /* CalculateDistance.cpp */,
-				B5174A781A58DDAC00D307B2 /* CalculateDistance.h */,
-				B5174A791A58DDAC00D307B2 /* CityLocation.cpp */,
-				B5174A7A1A58DDAC00D307B2 /* CityLocation.h */,
-				B5174A7B1A58DDAC00D307B2 /* QuizQuestion.cpp */,
-				B5174A7C1A58DDAC00D307B2 /* QuizQuestion.h */,
-				B5174A7D1A58DDAC00D307B2 /* Quizzer.cpp */,
-				B5174A7E1A58DDAC00D307B2 /* Quizzer.h */,
-				B5174A7F1A58DDAC00D307B2 /* SharedCode.cpp */,
-				B5174A801A58DDAC00D307B2 /* SharedCode.h */,
+				B52E9CFE1A59EF3D00478BFE /* CalculateDistance.cpp */,
+				B52E9CFF1A59EF3D00478BFE /* CalculateDistance.h */,
+				B52E9D001A59EF3D00478BFE /* CityLocation.cpp */,
+				B52E9D011A59EF3D00478BFE /* CityLocation.h */,
+				B52E9D021A59EF3D00478BFE /* QuizQuestion.cpp */,
+				B52E9D031A59EF3D00478BFE /* QuizQuestion.h */,
+				B52E9D041A59EF3D00478BFE /* Quizzer.cpp */,
+				B52E9D051A59EF3D00478BFE /* Quizzer.h */,
+				B52E9D061A59EF3D00478BFE /* SharedCode.cpp */,
+				B52E9D071A59EF3D00478BFE /* SharedCode.h */,
 			);
 			path = SharedCode;
 			sourceTree = "<group>";
@@ -336,11 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5174A851A58DDAC00D307B2 /* SharedCode.cpp in Sources */,
-				B5174A811A58DDAC00D307B2 /* CalculateDistance.cpp in Sources */,
-				B5174A841A58DDAC00D307B2 /* Quizzer.cpp in Sources */,
-				B5174A831A58DDAC00D307B2 /* QuizQuestion.cpp in Sources */,
-				B5174A821A58DDAC00D307B2 /* CityLocation.cpp in Sources */,
+				B52E9D0B1A59EF3D00478BFE /* Quizzer.cpp in Sources */,
+				B52E9D0A1A59EF3D00478BFE /* QuizQuestion.cpp in Sources */,
+				B52E9D091A59EF3D00478BFE /* CityLocation.cpp in Sources */,
+				B52E9D081A59EF3D00478BFE /* CalculateDistance.cpp in Sources */,
+				B52E9D0C1A59EF3D00478BFE /* SharedCode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +539,7 @@
 				B5174A571A58D7F800D307B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5174A711A58DD6300D307B2 /* Build configuration list for PBXNativeTarget "SharedCode" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +548,7 @@
 				B5174A731A58DD6300D307B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5174A9B1A58DDC600D307B2 /* Build configuration list for PBXNativeTarget "MiniPals" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +557,7 @@
 				B5174A9D1A58DDC600D307B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
