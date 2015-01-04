@@ -75,9 +75,9 @@ GpsPosition_iOS::~GpsPosition_iOS()
 
 void GpsPosition_iOS::GetCurrentPosition()
 {
-    if(CLLocationCoordinate2DIsValid([_gpsPositionManager coordinate]))
+    auto coord = [_gpsPositionManager coordinate];
+    if(CLLocationCoordinate2DIsValid(coord) && coord.latitude != 0 && coord.longitude != 0)
     {
-        auto coord = [_gpsPositionManager coordinate];
         _latitude = coord.latitude;
         _longitude = coord.longitude;
     }
@@ -88,7 +88,7 @@ void GpsPosition_iOS::GetCurrentPosition()
         //wait for the locationManager to call didUpdateLocation
         //[_gpsPositionManager wait];
     
-        auto coord = [_gpsPositionManager coordinate];
+        coord = [_gpsPositionManager coordinate];
         _latitude = coord.latitude;
         _longitude = coord.longitude;
     

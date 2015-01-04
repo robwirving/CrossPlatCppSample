@@ -19,7 +19,6 @@ class GpsPosition_iOS;
 -(void)start;
 -(void)stop;
 -(void)wait;
--(const CLLocationCoordinate2D)getCoordinate;
 @end
 
 #include "GpsPosition.h"

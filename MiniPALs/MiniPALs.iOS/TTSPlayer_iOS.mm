@@ -29,6 +29,6 @@ TTSPlayer_iOS::~TTSPlayer_iOS()
 void TTSPlayer_iOS::SpeakText(std::string text)
 {
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:convertToPlatformString(text)];
-    [utterance setRate:1.1f];
+    [utterance setRate:0.4f];
     [_speechSynthesizer speakUtterance:utterance];
 }
