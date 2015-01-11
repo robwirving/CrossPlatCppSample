@@ -36,6 +36,6 @@ void SoundEffectPlayer_iOS::PlayEffect(std::string text)
                                          pathForResource:audioFileName
                                          ofType:audioFileType]];
     
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    [audioPlayer play];
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [player play];
 }

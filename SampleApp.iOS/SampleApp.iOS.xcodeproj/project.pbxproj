@@ -24,8 +24,8 @@
 		B5174ABA1A58F52300D307B2 /* PlatformConversions_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5174AB91A58F52300D307B2 /* PlatformConversions_iOS.mm */; };
 		B5174ABC1A59016500D307B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174ABB1A59016500D307B2 /* CoreLocation.framework */; };
 		B5174ABE1A59892900D307B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5174ABD1A59892900D307B2 /* AVFoundation.framework */; };
-		B5174AC11A59D62A00D307B2 /* buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */; };
-		B5174AC21A59D62A00D307B2 /* clapping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5174AC01A59D62A00D307B2 /* clapping.mp3 */; };
+		B523B1311A6325F2009987D6 /* buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B523B12F1A6325F2009987D6 /* buzzer.mp3 */; };
+		B523B1321A6325F2009987D6 /* clapping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B523B1301A6325F2009987D6 /* clapping.mp3 */; };
 		B52E9D081A59EF3D00478BFE /* CalculateDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9CFE1A59EF3D00478BFE /* CalculateDistance.cpp */; };
 		B52E9D091A59EF3D00478BFE /* CityLocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D001A59EF3D00478BFE /* CityLocation.cpp */; };
 		B52E9D0A1A59EF3D00478BFE /* QuizQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E9D021A59EF3D00478BFE /* QuizQuestion.cpp */; };
@@ -83,8 +83,8 @@
 		B5174AB91A58F52300D307B2 /* PlatformConversions_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PlatformConversions_iOS.mm; path = ../../MiniPALs/MiniPALs.iOS/PlatformConversions_iOS.mm; sourceTree = "<group>"; };
 		B5174ABB1A59016500D307B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B5174ABD1A59892900D307B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzzer.mp3; path = ../SampleApp.WindowsPhone/Assets/buzzer.mp3; sourceTree = "<group>"; };
-		B5174AC01A59D62A00D307B2 /* clapping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clapping.mp3; path = ../SampleApp.WindowsPhone/Assets/clapping.mp3; sourceTree = "<group>"; };
+		B523B12F1A6325F2009987D6 /* buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzer.mp3; sourceTree = "<group>"; };
+		B523B1301A6325F2009987D6 /* clapping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clapping.mp3; sourceTree = "<group>"; };
 		B52E9CFE1A59EF3D00478BFE /* CalculateDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CalculateDistance.cpp; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.cpp; sourceTree = "<group>"; };
 		B52E9CFF1A59EF3D00478BFE /* CalculateDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateDistance.h; path = ../../SharedCode/SharedCode.Shared/CalculateDistance.h; sourceTree = "<group>"; };
 		B52E9D001A59EF3D00478BFE /* CityLocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CityLocation.cpp; path = ../../SharedCode/SharedCode.Shared/CityLocation.cpp; sourceTree = "<group>"; };
@@ -129,10 +129,9 @@
 		B5174A291A58D7F800D307B2 = {
 			isa = PBXGroup;
 			children = (
+				B523B12E1A6325BD009987D6 /* Sounds */,
 				B5174ABD1A59892900D307B2 /* AVFoundation.framework */,
 				B5174ABB1A59016500D307B2 /* CoreLocation.framework */,
-				B5174ABF1A59D62A00D307B2 /* buzzer.mp3 */,
-				B5174AC01A59D62A00D307B2 /* clapping.mp3 */,
 				B5174A8B1A58DDC500D307B2 /* MiniPals */,
 				B5174A331A58D7F800D307B2 /* Products */,
 				B5174A341A58D7F800D307B2 /* SampleApp.iOS */,
@@ -210,6 +209,15 @@
 				B5174AA61A58DE0B00D307B2 /* TTSPlayer.h */,
 			);
 			path = MiniPals;
+			sourceTree = "<group>";
+		};
+		B523B12E1A6325BD009987D6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B523B12F1A6325F2009987D6 /* buzzer.mp3 */,
+				B523B1301A6325F2009987D6 /* clapping.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +321,8 @@
 			files = (
 				B5174A411A58D7F800D307B2 /* Main.storyboard in Resources */,
 				B5174A461A58D7F800D307B2 /* LaunchScreen.xib in Resources */,
-				B5174AC21A59D62A00D307B2 /* clapping.mp3 in Resources */,
-				B5174AC11A59D62A00D307B2 /* buzzer.mp3 in Resources */,
+				B523B1321A6325F2009987D6 /* clapping.mp3 in Resources */,
+				B523B1311A6325F2009987D6 /* buzzer.mp3 in Resources */,
 				B5174A431A58D7F800D307B2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
