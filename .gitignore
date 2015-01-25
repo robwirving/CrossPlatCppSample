@@ -42,6 +42,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Xcode files and folders
+*.xcuserstate
+*.xcbkptlist
 
 # Visual Studio files and folders
 *.opensdf
