@@ -5,17 +5,21 @@
 class CityLocation
 {
 public:
-	CityLocation()
-	{
-	}
+	CityLocation();
 
-	CityLocation(const std::string& nm, double lat, double lon, double dist)
-		: name(nm), latitude(lat), longitude(lon), distance(dist)
-	{
-	}
+	CityLocation(const std::string& nm, double lat, double lon, double dist);
+	
+	std::string GetName() const;
 
-	std::string name;
-	double latitude;
-	double longitude;
-	double distance;
+	double GetLatitude() const;
+	double GetLongitude() const;
+
+	void SetDistance(double distance);
+	double GetDistance() const;
+
+private:
+	std::string _name;
+	double _latitude;
+	double _longitude;
+	double _distance;
 };

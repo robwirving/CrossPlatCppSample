@@ -46,7 +46,7 @@ void App::OnLaunched(LaunchActivatedEventArgs^ e)
 #if _DEBUG
 	if (IsDebuggerPresent())
 	{
-		DebugSettings->EnableFrameRateCounter = true;
+		DebugSettings->EnableFrameRateCounter = false;
 	}
 #endif
 

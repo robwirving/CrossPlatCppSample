@@ -18,7 +18,8 @@ public:
 
 	void Load();
 
-	bool NextQuestion();
+	void NextQuestion();
+	bool IsNextQuestion() const;
 	const QuizQuestion& GetQuestion() const;
 
 	bool SelectAnswer(unsigned int answerChoice) const;

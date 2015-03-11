@@ -89,25 +89,29 @@ void MainPage::button3_Click(Platform::Object^ sender, Windows::UI::Xaml::Routed
 
 void MainPage::button4_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	if(_quizzer.NextQuestion())
+	if(_quizzer.IsNextQuestion())
+	{
+		_quizzer.NextQuestion();
 		displayQuestion();
+	}
 }
 
 void MainPage::selectAnswer(unsigned int answerChoice)
 {
 	_quizzer.SelectAnswer(answerChoice);
 
-	button4->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	if (_quizzer.IsNextQuestion())
+		button4->Visibility = Windows::UI::Xaml::Visibility::Visible;
 }
 
 void MainPage::displayQuestion()
 {
-	auto question = _quizzer.GetQuestion();
+	auto q = _quizzer.GetQuestion();
 
-	txtQuestion->Text = convertToPlatformString(question.GetQuestion());
-	button1->Content = convertToPlatformString(question.GetAnswers()[0]);
-	button2->Content = convertToPlatformString(question.GetAnswers()[1]);
-	button3->Content = convertToPlatformString(question.GetAnswers()[2]);
+	txtQuestion->Text = convertToPlatformString(q.GetQuestion());
+	button1->Content = convertToPlatformString(q.GetAnswers()[0]);
+	button2->Content = convertToPlatformString(q.GetAnswers()[1]);
+	button3->Content = convertToPlatformString(q.GetAnswers()[2]);
 
 	button4->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 }

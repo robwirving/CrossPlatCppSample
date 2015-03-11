@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedCode\SharedCode.Windows\SharedCode.Windows.vcxproj">
-      <Project>{f225e618-6196-4204-9fd6-7560027223c0}</Project>
+      <Project>{e71ed9c5-cdb8-4f8d-bed0-e578fb5793b8}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
